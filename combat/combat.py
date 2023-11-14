@@ -12,7 +12,7 @@ def player_heal(player: Player, ability: Ability):
   heal = player.calc_heal(ability)
   player.set_hit_points(heal)
   heal_text = heal * -1 # convert to positive num
-  print("\nYou {} {}. It heals you for {} hit points up to {}. \n".format(
+  print("You {} {}. It heals you for {} hit points up to {}. \n".format(
                                                                   ability.verb,
                                                                   ability.name,
                                                                   heal_text,
@@ -48,8 +48,8 @@ def monster_attack(monster: Monster, player: Player):
   """
   damage = monster.calc_damage()
   player.set_hit_points(damage)
-  print("\nThe enemy {} attacks you for {} damage. Your hit points are reduced to {}. \n".format(
-                                                                                            monster.name,
-                                                                                            damage,
-                                                                                            player.hit_points)
+  print("The enemy {} attacks you for {} damage. Your hit points are reduced to {}. \n".format(
+                                                                                          monster.name,
+                                                                                          damage,
+                                                                                          player.hit_points)
   )

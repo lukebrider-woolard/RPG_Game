@@ -1,12 +1,12 @@
 # Abilities [Name, Damage, Initiative, Verb]
 # If Damage is negative ability is a heal.
-# Total damage of all abilities for a class should equal 3
+# Damage (and inverse of heal) should add up to 7.
 # Initiative should be 1 or 2, heals are always 1
 
 abilities = {
-  "warrior": [("Mortal Strike", 4, 2, "use"), ("Charge", 1, 1, "use"), ("Warcry", -2, 1, "use")],
-  "hunter": [("Ranged Shot", 3, 2, "use"), ("Quick Shot", 2, 1, "use"), ("Nature Mend", -2, 1, "use")],
-  "mage": [("Frost Bolt", 3, 2, "cast"), ("Fire Bolt", 2, 1, "cast"), ("Protective Ward", -2, 1, "cast")],
-  "priest": [("Smite", 2, 2, "cast"), ("Holy Fire", 2, 1, "cast"), ("Heal Wounds", -3, 1, "cast")],
-  "rogue": [("Slash", 2, 2, "use"), ("Throwing Knife", 3, 1, "use"), ("Bottle of Rum", -2, 1, "use")],
+  "warrior": [("Charge", 1, 1, "use"), ("Mortal Strike", 4, 2, "use"), ("Warcry", -2, 1, "use")],
+  "ranger": [("Quick Shot", 2, 1, "use"), ("Ranged Shot", 3, 2, "use"), ("Nature Mend", -2, 1, "use")],
+  "mage": [("Fire Bolt", 3, 1, "cast"), ("Frost Bolt", 2, 2, "cast"), ("Protective Ward", -2, 1, "cast")],
+  "cleric": [("Holy Fire", 2, 1, "cast"), ("Smite", 2, 2, "cast"), ("Cure Wounds", -3, 1, "cast")],
+  "rogue": [("Throwing Knives", 4, 1, "use"), ("Slash", 2, 2, "use"), ("Bottle of Rum", -1, 1, "use")],
 }
