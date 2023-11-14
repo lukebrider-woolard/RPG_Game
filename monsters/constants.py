@@ -1,0 +1,1 @@
+enemy_names = ["Troll", "Gnoll", "Owl Bear", "Bandit", "Thief", "Harpy", "Ogre", "Witch", "Warlock", "Hobgoblin"]
